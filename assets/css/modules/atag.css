@@ -1,0 +1,15 @@
+.cta a
+{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
