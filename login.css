@@ -1,0 +1,204 @@
+body {
+  background-color: #20232d;
+  font-family: "Asap", sans-serif;
+}
+
+.login {
+  overflow: hidden;
+  background-color: #393e4e;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+  -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(7, 26, 46, 0.5);
+
+  @media (max-width : 786px) {
+        width : 250px;
+        padding: 20px 15px 15px 15px
+
+      
+  }
+}
+
+.login::before,
+.login::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 900px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: white;
+  -webkit-animation: wawes 10s infinite linear;
+  -moz-animation: wawes 10s infinite linear;
+  animation: wawes 10s infinite linear;
+}
+
+.login::after {
+  left: 35%;
+  bottom: -125%;
+  background-color: whitesmoker;
+  -webkit-animation: wawes 10s infinite;
+  -moz-animation: wawes 10s infinite;
+  animation: wawes 10s infinite;
+}
+
+.login>input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  box-shadow: 5px 5px 5px rgba(7, 26, 46, 0.3);
+  padding: 10px 10px;
+  margin: 40px -10px;
+}
+
+.login .loginTitle
+{
+  font-family: "Asap", sans-serif;
+  color: #a6c1ee;
+  text-shadow: 2px 4px 4px rgb(42, 41, 41);
+  text-align: center;
+
+
+}
+.login .signup {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50%;
+  color: #b3b1b1;
+  text-shadow: 2px 4px 4px rgb(42, 41, 41);
+
+}
+
+.btn {
+  font-family: "Asap", sans-serif;
+  font-size: 13px;
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-right: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(7, 26, 46, 0.3);
+}
+
+.login .loginButton {
+  font-family: "Asap", sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 75%;
+    margin-bottom: 50%;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-color: #c65959;
+    box-shadow: 5px 5px 5px rgba(7, 26, 46, 0.3);
+
+
+
+
+    
+   
+}
+
+
+.btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.loginButton:hover {
+  background-position: right center;
+}
+
+
+
+.loginButton {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+@-webkit-keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes wawes {
+  from {
+    -moz-transform: rotate(0);
+  }
+
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+}
